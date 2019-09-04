@@ -19,7 +19,9 @@
           <v-flex xs12 sm4 md3>
             <div class="caption grey--text">Trainer</div>
             <div class="subtitle-1">
-              <nuxt-link to="/">{{ trainer.name }}</nuxt-link>
+              <nuxt-link :to="`/trainers/${trainer.name}`">{{
+                trainer.name
+              }}</nuxt-link>
             </div>
           </v-flex>
           <v-flex xs12 sm8 md4 class="pr-5">
